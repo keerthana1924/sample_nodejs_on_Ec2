@@ -5,4 +5,4 @@ WORKDIR /app
 RUN npm install
 #ENTRYPOINT ["python"]
 EXPOSE 3000
-CMD ["node", "npm start"]]
+CMD ["node", "app.js"]]
