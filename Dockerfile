@@ -1,8 +1,8 @@
-FROM node:16
+FROM node:16-slim
 MAINTAINER keethu "chennepallikeerthana@gmail.com"
 COPY . /app
 WORKDIR /app
 RUN npm install
 #ENTRYPOINT ["python"]
 EXPOSE 3000
-CMD ["node", "app.js"]]
+CMD ["npm", "start"]
